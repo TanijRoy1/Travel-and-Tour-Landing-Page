@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f9f6f6;
+}
+/* --------Utility CSS-------- */
+
+.home-section{
+    padding: 50px 0;
+}
+
+
+/* -----------Hero Section----------- */
+.hero-section{
+    height: 90vh;
+    min-height: 700px;
+    background-image: url(..//img/hero.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.input-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.input-container :first-child {
+  grid-column: span 2;
+}
+.hero-input input {
+  width: 100%;
+  height: 45px;
+  padding-left: 20px;
+  outline: none;
+}
+
+/* ----------Feature Section---------- */
+.feature-description{
+    text-align: justify;
+}
+.feature-box{
+    background-color: #fff;
+    padding: 5px 20px;
+    box-shadow: 0 0 5px #0000002e;
+    border-radius: 4px;
+}
+
+/* ----------Destination Section----------- */
+.destination-box img{
+    width: 100%;
+}
+.destination-section{
+    position: relative;
+}
+.travel-shodow{
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    font-size: 12rem;
+    font-weight: 900;
+    z-index: -1;
+    color: #d6dbe2;
+}
+/* ----------Discount Section----------- */
+.discount-section .container{
+    max-width: 883px;
+    margin: 0 auto;
+}
+.discount-section{
+    min-height: 600px;
+    background-image: url(../img/discount.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.discount-heading{
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+.discount-heading span{
+    font-size: 2.3rem;
+}
+.time-box{
+    font-size: 1.125rem;
+}
+.time-circle{
+    border: 8px solid #fff;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+.btn{
+    background-color: black;
+    color: #fff;
+    border: 2px solid black;
+    font-weight: 600;
+}
+.btn:hover{
+    border: 2px solid black;
+    color: #000;
+    font-weight: 600;
+}
+
+/* ----------Package Section----------- */
+.package-box{
+    background-color: #fff;
+    box-shadow: 0 0 10px #0000003b;
+    border-radius: 4px;
+}
+.package-box img{
+    border-radius: 4px;
+}
+.book-now{
+    background: #0075bf;
+    border: none;
+}
+.book-now:hover{
+    background-color: #002d79;
+    border: none;
+    color: #fff;
+}
+.price{
+    font-size: 2.1875rem;
+    color: #0075bf;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.package-box-content{
+    padding: 30px;
+}
+
+/* ---------Review Section----------- */
+.review-des{
+    margin-bottom: 36px;
+}
+.client{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.review-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px #0000003b;
+    background-color: #fff;
+    padding: 45px 40px;
+    border-radius: 4px;
+}
+.inverted{
+    color: #0075bf;
+    font-size: 3rem;
+    margin-top: -0.5rem;
+    font-weight: 700;
+}
+/* ----Carouserl----- */
+.review-section{
+    overflow: hidden;
+}
+.dot{
+    font-size: 10rem;
+    color: #6f6f6f;
+    cursor: pointer;
+    line-height: 1.5rem;
+    margin-bottom: 5rem;
+}
+.dot:hover{
+    color: #002d79;
+}
+.dot-active{
+    color: #0075bf;
+}
+.hide{
+    display: none;
+}
+.block{
+    display: block;
+    opacity: 0;
+    animation: slideLeft 1.5s ease 0s forwards;
+}
+@keyframes slideLeft {
+    0%{
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* -------------Offer Section----------- */
+.offer-section{
+    min-height: 600px;
+    background-image: url(../img/offer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.row .col-lg-6:nth-of-type(2) .offer-box {
+    padding-left: 100px;
+  
+}
+.offer-section::before{
+   content: "";
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to right,
+    #0075bf 100%,
+    rgba(255, 255, 255, 0) 0%
+  );
+}
+.offer-box-heading{
+    position: relative;
+    z-index: 2;
+    font-size: 2.5rem;
+}
+.offer-box-heading .span-1{
+    font-size: 5rem;
+    font-weight: 300;
+}
+.offer-box-heading .span-2{
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+/* -------------Blog Section------------ */
+.blog-section{
+    overflow: hidden;
+}
+/* for giving same height to the blog box,
+ .blog-box should have height:100%, and .row should not have align-items-center */
+.blog-box{
+    box-shadow: 0 0 10px #0000003b;
+    height: 100%;
+    border-radius: 4px;
+}
+.blog-box img{
+    border-radius: 4px;
+}
+.blog-box-content{
+    padding: 30px;
+}
+.blog-dot{
+    font-size: 10rem;
+    color: #6f6f6f;
+    cursor: pointer;
+    line-height: 1.5rem;
+    margin-bottom: 5rem;
+}
+.blog-dot:hover{
+    color: #002d79;
+}
+.dot-active{
+    color: #0075bf;
+}
+.blog-box-link{
+    text-decoration: none;
+    font-weight: 600;
+}
+.blog-box-link:hover{
+    text-decoration: underline;
+}
+
+/* --------------Subscribe Section------------ */
+.subscribe-section{
+    background-color: #002855;
+    color: #fff;
+    padding: 100px 0;
+}
+.input-box input{
+    padding: 10px 24px;
+}
+.input-box {
+  display: flex;
+  align-items: stretch; /* makes children same height */
+  width: fit-content; /* or 100%, depending on layout */
+}
+
+.input-box input,
+.input-box button {
+  padding: 10px 24px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 0;
+  font-weight: 500;
+}
+
+.input-box button {
+  cursor: pointer;
+  background-color: #000; /* adjust as needed */
+  color: #fff;
+  border: none;
+}
+.input-box button:hover {
+  background-color: #002d79;
+  color: #fff;
+  border: none;
+}
+
+/* ---------------Footer----------------- */
+footer{
+    padding-top: 100px;
+}
+.footer-bottom{
+    background-color: #e6e9f0;
+    margin-top: 60px;
+}
