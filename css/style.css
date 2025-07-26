@@ -6,8 +6,8 @@
 body{
     background-color: #f9f6f6;
     font-family: "Roboto", sans-serif;
-    font-family: "Inter", sans-serif;
     font-family: "Libre Baskerville", serif;
+    font-family: "Inter", sans-serif;
 }
 /* --------Utility CSS-------- */
 
@@ -87,13 +87,18 @@ body{
 
 /* ----------Feature Section---------- */
 .feature-description{
-    text-align: justify;
+    font-family: "Inter", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 .feature-box{
     background-color: #fff;
     padding: 5px 20px;
     box-shadow: 0 0 5px #0000002e;
     border-radius: 4px;
+}
+.feature-title{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
 }
 
 /* ----------Destination Section----------- */
@@ -102,6 +107,7 @@ body{
 }
 .destination-section{
     position: relative;
+    overflow: hidden;
 }
 .travel-shodow{
     position: absolute;
@@ -124,6 +130,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
+    font-family: "Libre Baskerville", serif;
 }
 .discount-heading{
     font-size: 3rem;
@@ -150,11 +157,18 @@ body{
     color: #fff;
     border: 2px solid black;
     font-weight: 600;
+    font-family: "Inter", sans-serif;
 }
 .btn:hover{
     border: 2px solid black;
     color: #000;
     font-weight: 600;
+}
+.time-box p{
+    font-family: "Inter", sans-serif;
+}
+.join-us{
+    margin-top: 80px;
 }
 
 /* ----------Package Section----------- */
@@ -176,6 +190,7 @@ body{
     color: #fff;
 }
 .price{
+    font-family: "Libre Baskerville", serif;
     font-size: 2.1875rem;
     color: #0075bf;
     font-weight: 700;
@@ -191,6 +206,11 @@ body{
     width: 100px;
     border-radius: 50%;
 }
+.client-name{
+    font-size: 1.4rem;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
 .review-box{
     display: flex;
     flex-direction: column;
@@ -205,6 +225,9 @@ body{
     font-size: 3rem;
     margin-top: -0.5rem;
     font-weight: 700;
+}
+.inverted{
+    font-family: "Libre Baskerville", serif;
 }
 /* ----Carouserl----- */
 .review-section{
@@ -283,7 +306,34 @@ body{
     font-size: 5rem;
     font-weight: 600;
 }
-
+.offer{
+    font-family: "Libre Baskerville", serif;
+}
+.offer-price{
+    font-family: "Libre Baskerville", serif;
+}
+.offer-price h3 span{
+    font-size: 1.15rem;
+}
+.stars{
+    color: rgb(231, 231, 20);
+}
+.offer-review{
+    display: flex;
+    margin-left: 28px;
+    margin-top: 8px;
+    gap: 8px;
+    font-size: .9rem;
+}
+.offer-btns{
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: -40px;
+}
+.offer{
+    margin-bottom: 45px;
+}
 /* -------------Blog Section------------ */
 .blog-section{
     overflow: hidden;
@@ -321,6 +371,9 @@ body{
 .blog-box-link:hover{
     text-decoration: underline;
 }
+.blog-date{
+    font-family: "Libre Baskerville", serif;
+}
 
 /* --------------Subscribe Section------------ */
 .subscribe-section{
@@ -333,8 +386,8 @@ body{
 }
 .input-box {
   display: flex;
-  align-items: stretch; /* makes children same height */
-  width: fit-content; /* or 100%, depending on layout */
+  align-items: stretch;
+  width: fit-content; 
 }
 
 .input-box input,
@@ -385,70 +438,14 @@ footer{
     text-decoration: underline;
     color: #0075bf;
 }
-
-
-
-
-@media (max-width: 767px) {
-  .carousel .row {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .carousel .col-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    scroll-snap-align: center;
-  }
-
-  .carousel .review-box {
-    height: 100%;
-    margin: 0 auto;
-  }
-
-  /* Optional: Hide scrollbar */
-  .carousel .row::-webkit-scrollbar {
-    display: none;
-  }
+.footer-text{
+    font-family: "Libre Baskerville", serif;
 }
 
 
-
-@media (max-width: 767px) {
-  .carousel .row {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    padding: 0 10px;
-    gap: 10px;
-  }
-
-  .carousel .col-12 {
-    flex: 0 0 85%; /* show one full box with a bit of next */
-    scroll-snap-align: center;
-    transition: transform 0.3s ease;
-  }
-
-  /* Optional: smooth peek on hover or focus */
-  .carousel .col-12:hover,
-  .carousel .col-12:focus-within {
-    transform: translateX(-5%);
-  }
-
-  .carousel .review-box {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background: white;
-    padding: 20px;
-  }
-
-  /* Hide scrollbar for clean look */
-  .carousel .row::-webkit-scrollbar {
-    display: none;
-  }
+@media screen and (max-width: 678px) {
+    .travel-shodow{
+        bottom: -30px;
+        font-size: 6.5rem;
+    }
 }
-
-
